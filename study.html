@@ -1,0 +1,164 @@
+<html>
+<head>
+    <title>Schoolhouse - Calculus</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div id="root"></div>
+    <script type="text/babel">
+        const App = () => {
+            return (
+                <div>
+                    <header class="bg-white shadow-sm">
+                        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <div class="flex justify-between h-16">
+                                <div class="flex">
+                                    <div class="flex-shrink-0 flex items-center">
+                                        <img class="h-8 w-auto" src="https://placehold.co/32x32" alt="island logo" />
+                                        <span class="ml-2 text-xl font-semibold text-blue-600">海岛教育</span>
+                                    </div>
+                                    <nav class="hidden md:ml-6 md:flex md:space-x-8">
+                                        <a href="#" class="text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">学习</a>
+                                        <a href="#" class="text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">如何运作</a>
+                                        <a href="#" class="text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">社区</a>
+                                        <a href="#" class="text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">关于</a>
+                                    </nav>
+                                </div>
+                                <div class="flex items-center">
+                                    <a href="#" class="text-sm font-medium text-gray-900">登录</a>
+                                    <a href="#" class="ml-4 px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">注册</a>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 flex">
+                        <aside class="w-64 bg-white p-4 rounded-lg shadow-sm">
+                            <nav class="space-y-1">
+                                <a href="#" class="flex items-center px-3 py-2 text-sm font-medium text-blue-600 bg-blue-50 rounded-md">
+                                    <i class="fas fa-home mr-3"></i> 主页
+                                </a>
+                                <a href="#" class="flex items-center px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-md">
+                                    <i class="fas fa-heartbeat mr-3"></i> 心理健康
+                                </a>
+                            </nav>
+                            <div class="mt-8">
+                                <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wide">支持频道</h3>
+                                <nav class="mt-2 space-y-1">
+                                    <a href="#" class="flex items-center px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-md">
+                                        <i class="fas fa-bullhorn mr-3"></i> 通知
+                                    </a>
+                                    <a href="#" class="flex items-center px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-md">
+                                        <i class="fas fa-user-friends mr-3"></i> 心理咨询
+                                    </a>
+                                    <a href="#" class="flex items-center px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-md">
+                                        <i class="fas fa-comments mr-3"></i> 讨论
+                                    </a>
+                                    <a href="#" class="flex items-center px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-md">
+                                        <i class="fas fa-user-plus mr-3"></i> 志愿服务
+                                    </a>
+                                </nav>
+                            </div>
+                            <div class="mt-8">
+                                <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wide">资源</h3>
+                                <nav class="mt-2 space-y-1">
+                                    <a href="#" class="flex items-center px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-md">
+                                        <i class="fas fa-road mr-3"></i> 心理支持之旅
+                                    </a>
+                                    <a href="#" class="flex items-center px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-md">
+                                        <i class="fas fa-certificate mr-3"></i> 认证
+                                    </a>
+                                    <a href="#" class="flex items-center px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-md">
+                                        <i class="fas fa-trophy mr-3"></i> 成长排行榜
+                                    </a>
+                                    <a href="#" class="flex items-center px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-md">
+                                        <i class="fas fa-info-circle mr-3"></i> 关于
+                                    </a>
+                                </nav>
+                            </div>
+                        </aside>
+                        <main class="flex-1 bg-white p-6 rounded-lg shadow-sm ml-6">
+                            <div class="flex justify-between items-center mb-6">
+                                <h2 class="text-xl font-semibold text-gray-900">即将开始的心理健康会话</h2>
+                                <a href="#" class="text-sm font-medium text-blue-600">探索更多 &gt;</a>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+                                <div class="bg-white p-4 rounded-lg shadow-sm border">
+                                    <h3 class="text-sm font-semibold text-gray-900">心理健康与压力管理</h3>
+                                    <p class="text-sm text-gray-500">探索有效的压力管理策略和心态调整</p>
+                                    <div class="flex items-center mt-2">
+                                        <i class="fas fa-user-circle text-gray-500 mr-2"></i>
+                                        <p class="text-sm text-gray-900">李老师, 及其他</p>
+                                    </div>
+                                    <p class="text-sm text-gray-500 mt-2">Thu Oct 24, 18:00</p>
+                                    <p class="text-sm text-gray-500">学习如何应对压力的工具</p>
+                                    <button class="mt-4 w-full px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">查看</button>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm border">
+                                    <h3 class="text-sm font-semibold text-gray-900">青少年心理健康支持</h3>
+                                    <p class="text-sm text-gray-500">提供关于焦虑和抑郁的支持和资源</p>
+                                    <div class="flex items-center mt-2">
+                                        <i class="fas fa-user-circle text-gray-500 mr-2"></i>
+                                        <p class="text-sm text-gray-900">胡老师</p>
+                                    </div>
+                                    <p class="text-sm text-gray-500 mt-2">Fri Oct 25, 16:00</p>
+                                    <p class="text-sm text-gray-500">开放问题解答和心理健康讨论</p>
+                                    <button class="mt-4 w-full px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">查看</button>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm border">
+                                    <h3 class="text-sm font-semibold text-gray-900">情绪管理</h3>
+                                    <p class="text-sm text-gray-500">学习如何控制情绪波动并保持内心平静</p>
+                                    <div class="flex items-center mt-2">
+                                        <i class="fas fa-user-circle text-gray-500 mr-2"></i>
+                                        <p class="text-sm text-gray-900">王老师</p>
+                                    </div>
+                                    <p class="text-sm text-gray-500 mt-2">Sat Oct 26, 14:00</p>
+                                    <p class="text-sm text-gray-500">深入了解情绪调节的技巧</p>
+                                    <button class="mt-4 w-full px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">查看</button>
+                                </div>
+                            </div>
+                            <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                                <p class="text-sm text-gray-900">加入这个心理健康频道，参与讨论、提问并参加支持性会话。</p>
+                                <button class="mt-2 px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">加入心理健康频道</button>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm border">
+                                <h2 class="text-xl font-semibold text-gray-900 mb-4">近期活动</h2>
+                                <div class="flex items-start">
+                                    <img class="h-10 w-10 rounded-full" src="https://placehold.co/40x40" alt="User avatar" />
+                                    <div class="ml-4">
+                                        <p class="text-sm font-medium text-gray-900">陈同学 <i class="fas fa-seedling text-green-500"></i></p>
+                                        <p class="text-sm text-gray-500">2h · 心理健康 · 焦虑管理</p>
+                                        <p class="mt-2 text-sm text-gray-900">问题：</p>
+                                        <p class="mt-1 text-sm text-gray-900">我最近感到非常焦虑，不知道该如何处理。请问有什么好的方法可以推荐？</p>
+                                        <p class="mt-2 text-sm text-gray-900">尝试过：</p>
+                                        <p class="mt-1 text-sm text-gray-900">我试过冥想和深呼吸练习，但效果不太明显。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+
+                        <aside class="w-64 bg-white p-4 rounded-lg shadow-sm ml-6">
+                            <h2 class="text-xl font-semibold text-gray-900 mb-4">关于心理健康频道</h2>
+                            <p class="text-sm text-gray-900">欢迎加入心理健康频道！ 👋 这里是一个为儿童和青少年提供支持的安全空间。心理健康对每个人都至关重要，我们致力于帮助每个人更好地应对生活中的挑战。</p>
+                            <p class="mt-4 text-sm text-gray-900">无论你是否有心理问题，都可以来这里学习心理健康知识，与专业导师交流，或是和社区成员分享经验。</p>
+                            <p class="mt-4 text-sm text-gray-900">作为导师，我们鼓励你主动提供帮助，分享心理健康资源或开设会话来支持他人。我们相信，通过大家的共同努力，每个人都能拥有更美好的心理健康状态。</p>
+                            <p class="mt-4 text-sm text-gray-900">如有任何疑问，可以查看社区指南或在讨论页面上提问。</p>
+                        </aside>
+                    </div>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>

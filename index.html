@@ -1,0 +1,132 @@
+<html>
+<head>
+    <title>Island Education</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const App = () => {
+            return (
+                <div>
+                    <header className="bg-white shadow">
+                        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+                            <div className="flex items-center">
+                                <img src="https://placehold.co/30x30" alt="Island Education logo" className="mr-2"/>
+                                <span className="text-xl font-bold text-blue-600">海岛教育</span>
+                            </div>
+                            <nav className="flex space-x-4">
+                                <a href="study.html" className="text-gray-700 hover:text-blue-600">学习</a>
+                                <div className="relative group">
+                                    <button className="text-gray-700 hover:text-blue-600">如何运作</button>
+                                    <div className="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                                        <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">成为志愿导师</a>
+                                        <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">志愿导师的好处</a>
+                                        <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">寻求帮助</a>
+                                        <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">虚拟辅导的安全性</a>
+                                    </div>
+                                </div>
+                                <div className="relative group">
+                                    <button className="text-gray-700 hover:text-blue-600">社区</button>
+                                    <div className="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                                        <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">排行榜</a>
+                                        <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">学习空间</a>
+                                        <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">导师博客</a>
+                                    </div>
+                                </div>
+                                <div className="relative group">
+                                    <button className="text-gray-700 hover:text-blue-600">关于</button>
+                                    <div className="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded-md">
+                                        <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">关于我们</a>
+                                    </div>
+                                </div>
+                            </nav>
+
+                            <div className="flex space-x-4">
+                                <a href="#" className="text-blue-600 hover:underline">登录</a>
+                                <a href="#" className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">注册</a>
+                            </div>
+                        </div>
+                    </header>
+                    <main className="bg-gray-50 py-12">
+                        <div className="container mx-auto px-4 text-center">
+                            <h1 className="text-2xl font-bold mb-6">获得心理健康和情绪管理的帮助。</h1>
+                            <div className="flex flex-wrap justify-center space-x-4 space-y-4">
+                                <div className="flex items-center space-x-2">
+                                    <div className="bg-blue-600 text-white p-2 rounded-md">情绪管理</div>
+                                    
+                                </div>
+                                <div className="flex items-center space-x-2">
+                                    <div className="bg-blue-600 text-white p-2 rounded-md">自我关怀</div>
+                                    
+                                </div>
+                                <div className="flex items-center space-x-2">
+                                    <div className="bg-blue-600 text-white p-2 rounded-md">心理健康</div>
+                                    
+                                </div>
+                                <div className="flex items-center space-x-2">
+                                    <div className="bg-blue-600 text-white p-2 rounded-md">压力管理</div>
+                                    
+                                </div>
+                                <div className="flex items-center space-x-2">
+                                    <div className="bg-green-600 text-white p-2 rounded-md">社交技巧</div>
+                                    
+                                </div>
+                                <div className="flex items-center space-x-2">
+                                    <div className="bg-green-600 text-white p-2 rounded-md">自信心建立</div>
+                                    
+                                </div>
+                                <div className="flex items-center space-x-2">
+                                    <div className="bg-purple-600 text-white p-2 rounded-md">抗压能力</div>
+                                    
+                                </div>
+                                <div className="flex items-center space-x-2">
+                                    <div className="bg-purple-600 text-white p-2 rounded-md">放松技巧</div>
+                                   
+                                </div>
+                                <div className="flex items-center space-x-2">
+                                    <div className="bg-purple-600 text-white p-2 rounded-md">成长心态</div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                    <section className="bg-white py-12">
+                        <div className="container mx-auto px-4 text-center">
+                            <h2 className="text-2xl font-bold mb-6">认识我们的心理辅导导师 <span role="img" aria-label="wave">👋</span></h2>
+                            <div className="flex justify-center space-x-8">
+                                <div className="text-center">
+                                    <p className="text-3xl font-bold">520+</p>
+                                    <p className="text-gray-500">心理导师</p>
+                                </div>
+                                <div className="text-center">
+                                    <p className="text-3xl font-bold">50+</p>
+                                    <p className="text-gray-500">国家和地区</p>
+                                </div>
+                            </div>
+                            <p className="text-gray-700 mt-6 mb-6">Island Education 是一个致力于海岛儿童心理健康的全球志愿者社区，我们的导师们都经过专业培训，帮助孩子们学习如何管理情绪、建立自信，并保持身心健康。（其中许多导师也是热爱儿童心理发展的高中生！）</p>
+                            <div className="flex justify-center space-x-4">
+                                <a href="tutor.html" className="bg-white border border-blue-600 text-blue-600 px-4 py-2 rounded-md hover:bg-blue-50">了解我们的导师</a>
+
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            );
+        };
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
